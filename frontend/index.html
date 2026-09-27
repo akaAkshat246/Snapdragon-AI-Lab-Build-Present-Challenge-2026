@@ -4,7 +4,30 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+    <meta
+      name="description"
+      content="DR-XAI • Explainable AI-powered Clinical Diabetic Retinopathy Screening, Tele-Ophthalmology & GPS Geotagged Diagnostic Platform."
+    />
+    <title>DR-XAI • Clinical Retinal Screening & Tele-Ophthalmology Platform</title>
+    <!-- Early theme initialization to prevent flash of wrong theme -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme') || localStorage.getItem('app_theme');
+          var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var activeTheme = (saved === 'dark' || saved === 'light') ? saved : (systemDark ? 'dark' : 'light');
+          if (activeTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.documentElement.classList.add('dark', 'dark-theme');
+          } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            document.documentElement.classList.remove('dark', 'dark-theme');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <!-- Google Identity Services for OAuth 2.0 Sign In -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
   </head>
   <body>
     <div id="root"></div>

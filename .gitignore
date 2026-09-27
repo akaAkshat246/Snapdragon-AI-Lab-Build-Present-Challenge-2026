@@ -216,3 +216,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Frontend dependencies and builds
+node_modules/
+dist/
+.vite/
+*.local
+.env
+.env.*
+!.env.example
+
+# Datasets, large model weights, and generated outputs
+backend/data/
+backend/models/*.pth
+backend/outputs/
+*.pth
+*.pt
+*.onnx
+*.h5
