@@ -11,7 +11,6 @@ import {
   RefreshCw,
   UserCheck,
   Globe,
-  Lock,
 } from 'lucide-react';
 import AppHeader from '../components/AppHeader';
 import AppFooter from '../components/AppFooter';
@@ -205,23 +204,6 @@ export const Landing: React.FC = () => {
                 <CheckCircle2 size={16} style={{ color: '#34d399', flexShrink: 0 }} />
                 <span>Bilingual patient counseling & 30/60/90-day follow-up tracking</span>
               </div>
-            </div>
-
-            <div
-              style={{
-                marginTop: 6,
-                background: 'rgba(0,0,0,0.25)',
-                borderRadius: 10,
-                padding: '10px 14px',
-                fontSize: 11.5,
-                color: '#38bdf8',
-                display: 'flex',
-                alignItems: 'center',
-                gap: 8,
-              }}
-            >
-              <Lock size={14} />
-              <span>100% Offline Edge Inference • Patient Data Kept Encrypted Locally</span>
             </div>
           </div>
         </div>
